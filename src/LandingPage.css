@@ -1,0 +1,74 @@
+/* Global reset */
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sidebar {
+    display: none;
+}
+
+body, html {
+    background-image: url('../public/assets/landing-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    font-family: 'Pixelify Sans', 'Press Start 2P', sans-serif;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-10px);
+    }
+    75% {
+        transform: translateY(10px);
+    }
+}
+
+.title {
+    animation: shake 2.5s ease-in-out infinite;
+}
+
+.title {
+    color: #fff;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.button {
+    font-family: 'Pixelify Sans', 'Press Start 2P', sans-serif;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 15px 30px;
+    border: 3px solid #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #000;
+    transform: scale(1.1);
+}
